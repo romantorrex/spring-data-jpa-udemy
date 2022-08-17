@@ -26,3 +26,9 @@ insert into student(fname, lname, score) values ('Linus', 'Torvalds', 9);
 insert into student(fname, lname, score) values ('Elon', 'Musk', 9);
 insert into student(fname, lname, score) values ('Albert', 'Einstein', 10);
 insert into student(fname, lname, score) values ('Roman', 'Torres', 7);
+
+insert into worker(worker_id, first_name, last_name) values (1, 'Minerva', 'McGonagall');
+insert into salary(ssn, salary_level, worker_id) values('333333666666', 2, 1);
+
+insert into parking_space(id, location, worker_id) values(1, 'Second Floor', 1);
+

@@ -101,3 +101,27 @@ create table programmers_projects
     FOREIGN KEY (project_id)
         REFERENCES project (id)
 );
+
+-- Tables for one-to-one relationships
+create table worker
+(
+  worker_id int PRIMARY KEY,
+  first_name varchar(64),
+  last_name varchar(64)
+);
+
+create table salary
+(
+  ssn varchar(12) PRIMARY KEY,
+  salary_level int,
+  worker_id int,
+  FOREIGN KEY (worker_id)
+    REFERENCES worker (worker_id)
+);
+
+create table parking_space
+(
+  id int PRIMARY KEY,
+  location varchar(256),
+  worker_id int
+);
